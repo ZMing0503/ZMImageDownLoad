@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "ZMDownLoadOperation.h"
+
+#import "ZMWebImageManage.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +20,12 @@
     [super viewDidLoad];
     
     
-    
+    NSString *urlstring = @"http://imgsrc.baidu.com/imgad/pic/item/b03533fa828ba61e5e6d4c0d4b34970a304e5915.jpg";
+    [[ZMWebImageManage sharedManager]downLoadImageWithURLString:urlstring completed:^(UIImage *image) {
+       
+        NSLog(@"image%@",image);
+        
+    }];
     
 }
 

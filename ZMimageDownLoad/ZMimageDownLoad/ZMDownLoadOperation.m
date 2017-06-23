@@ -1,10 +1,4 @@
-//
-//  ZMDownLoadOperation.m
-//  ZMimageDownLoad
-//
-//  Created by pg on 2017/6/23.
-//  Copyright © 2017年 pg. All rights reserved.
-//
+
 
 #import "ZMDownLoadOperation.h"
 
@@ -40,6 +34,14 @@
     
     NSURL *url  = [NSURL URLWithString:self.URLString];
     NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    //将取消操作的判断放在还是操作之后可以更大概率的捕获操作
+    if(self.isCancelled)
+    {
+        return;
+    }
+    
+    
     UIImage *image = [UIImage imageWithData:data];
     
     //图片下载结束,由于外界很可能在block内部做UI的刷新操作,因此在此处回到主线程

@@ -14,6 +14,7 @@
 		CFD9E3061EFCFC8B00CB6227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9E3051EFCFC8B00CB6227 /* Assets.xcassets */; };
 		CFD9E3091EFCFC8B00CB6227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9E3071EFCFC8B00CB6227 /* LaunchScreen.storyboard */; };
 		CFD9E3131EFCFEB700CB6227 /* ZMDownLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E3121EFCFEB700CB6227 /* ZMDownLoadOperation.m */; };
+		CFD9E3161EFD268800CB6227 /* ZMWebImageManage.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E3151EFD268800CB6227 /* ZMWebImageManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		CFD9E30A1EFCFC8B00CB6227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD9E3111EFCFEB700CB6227 /* ZMDownLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDownLoadOperation.h; sourceTree = "<group>"; };
 		CFD9E3121EFCFEB700CB6227 /* ZMDownLoadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDownLoadOperation.m; sourceTree = "<group>"; };
+		CFD9E3141EFD268800CB6227 /* ZMWebImageManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMWebImageManage.h; sourceTree = "<group>"; };
+		CFD9E3151EFD268800CB6227 /* ZMWebImageManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMWebImageManage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				CFD9E3111EFCFEB700CB6227 /* ZMDownLoadOperation.h */,
 				CFD9E3121EFCFEB700CB6227 /* ZMDownLoadOperation.m */,
+				CFD9E3141EFD268800CB6227 /* ZMWebImageManage.h */,
+				CFD9E3151EFD268800CB6227 /* ZMWebImageManage.m */,
 			);
 			name = ZMWebImage;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD9E3161EFD268800CB6227 /* ZMWebImageManage.m in Sources */,
 				CFD9E3131EFCFEB700CB6227 /* ZMDownLoadOperation.m in Sources */,
 				CFD9E3011EFCFC8B00CB6227 /* ViewController.m in Sources */,
 				CFD9E2FE1EFCFC8B00CB6227 /* AppDelegate.m in Sources */,
@@ -321,6 +327,7 @@
 				CFD9E30F1EFCFC8B00CB6227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
